@@ -73,10 +73,16 @@ public class RouteNavigation : MonoBehaviour
         gameObject.GetComponent<NavMeshAgent>().enabled = false;
         rb.isKinematic = false;
     }
-    private void inCollision(string objectName) //called when player collides
+    private void inCollision(GameObject obj) //called when player collides
     {
-        string loseText = "You were hit by a " + objectName;
-        GameObject.FindGameObjectWithTag("UIManager").GetComponent<GameStateManger>().LoadLoseScreen(loseText);
+        if (obj.layer!=11) { //player can't collide with the ground or the roads or things like that 
+            string loseText = "You were hit by a " + obj.name;
+            GameObject.FindGameObjectWithTag("UIManager").GetComponent<GameStateManger>().LoadLoseScreen(loseText);
+
+            wasInCollsision = true;
+            gameObject.GetComponent<NavMeshAgent>().enabled = false;
+            rb.isKinematic = false;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -84,11 +90,12 @@ public class RouteNavigation : MonoBehaviour
         {
             if (gameObject.tag == "Player")
             {
-                inCollision(other.gameObject.name);
+                inCollision(other.gameObject);
             }
             else
             {
-                inCollision();
+                if(!(gameObject.layer==10 && other.gameObject.layer==10)) //cars can't collide with other cars
+                    inCollision();
             }
         }
     }

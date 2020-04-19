@@ -21,6 +21,7 @@ public class DragObject : MonoBehaviour
     public int throwPowerMultiplier = 400;
     private float cameraOffset;
     private bool escape = false;
+    private bool objectBeingHeld;
 
     private void Start()
     {
@@ -36,7 +37,9 @@ public class DragObject : MonoBehaviour
         leftClick = Input.GetMouseButton(0);
         rightClick = Input.GetMouseButton(1);
 
-        if (!escape)
+        objectBeingHeld = cam.gameObject.GetComponent<isHoldingObject>().holdingObject();
+
+        if (!escape && (pickedUp || !objectBeingHeld))
         {
             if (!rightClick)
                 powerBarObj.SetActive(false);
@@ -45,6 +48,7 @@ public class DragObject : MonoBehaviour
                 if (leftClick && !pickedUp) //if left click and pickedUp is false
                 {
                     pickedUp = true;
+                    cam.gameObject.GetComponent<isHoldingObject>().holdingObject(true);
                     cameraOffset = Vector3.Distance(cam.transform.position, gameObject.transform.position);
                 }
                 if (!leftClick && !rightClick) //if not left click and not right click 
@@ -67,7 +71,14 @@ public class DragObject : MonoBehaviour
                         readyToFire = true;
                         //go to ready position
                         //transform.position = guide.transform.position;
-                        //start charging up shot 
+                        //start charging up shot
+                        
+                        //the below code block is put in to replace the above "transform.position = guide.transform.position" which has been commented out because of issues when launching larger buildings
+                        //<codeBlock>
+                        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, cameraOffset); //6.33 is offset from camera 
+                        Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+                        transform.position = objPosition;
+                        //</codeBlock>
                         IncreasePower();
                     }
                     else if (leftClick)
@@ -101,6 +112,8 @@ public class DragObject : MonoBehaviour
             if (readyToFire && !powerBarObj.activeSelf)
                 powerBarObj.SetActive(true);
             //Debug.Log("Picked up: " + pickedUp + "Mouse Button 0 down: "+ Input.GetMouseButtonDown(0) + " Mouse Button 1 down: " + Input.GetMouseButtonDown(1));
+            if (!pickedUp)
+                cam.gameObject.GetComponent<isHoldingObject>().holdingObject(false);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
