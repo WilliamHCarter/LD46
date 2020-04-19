@@ -15,7 +15,7 @@ NavMeshProjectSettings:
     cost: 10
   - name: CrossWalk
     cost: 1
-  - name: 
+  - name: SideWalk
     cost: 1
   - name: 
     cost: 1
