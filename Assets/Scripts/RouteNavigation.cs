@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(Rigidbody))]
 
 public class RouteNavigation : MonoBehaviour
 {
@@ -15,12 +16,14 @@ public class RouteNavigation : MonoBehaviour
     private int routeDestinationIndex;
 
     private Renderer renderer;
+    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
         renderer = GetComponent<Renderer>();
         routeDestinationIndex = 0;
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -29,7 +32,7 @@ public class RouteNavigation : MonoBehaviour
 
         if (!wasInCollsision) {
             int closestPointIndex = getClosestPointIndex();
-            if (closestPointIndex > routeDestinationIndex && !loop) //if there is a point closer to you in your toute then where you're going and that point is also further along in your route then go there
+            if (closestPointIndex > routeDestinationIndex && closestPointIndex!=routePoints.Length-1) //if there is a point closer to you in your route than where you're going and that point is also further along in your route then go there
             {
                 routeDestinationIndex = closestPointIndex;
             }
@@ -37,15 +40,16 @@ public class RouteNavigation : MonoBehaviour
             {
                 if (routeDestinationIndex == routePoints.Length - 1)//if this is your final destination
                 {
-                    Debug.Log("arrived at final destination");
+                    //Debug.Log("arrived at final destination");
                     if (!loop)
                     {
                         //eventually there will be some game over function that goes here but for now
-                        inCollision();
+                        GameObject.FindGameObjectWithTag("UIManager").GetComponent<GameStateManger>().LoadWinScreen();
                     }
                     else
                     {
                         routeDestinationIndex = 0; // go back to the begining of your route
+                        Debug.Log("going back to the begining");
                     }
                 }
                 else //go to the next point in the route
@@ -57,24 +61,35 @@ public class RouteNavigation : MonoBehaviour
             if (Vector3.Distance(agent.destination,routePoints[routeDestinationIndex].transform.position)>3)  //if you arn't going to your destination then go there
             {
                 agent.destination = routePoints[routeDestinationIndex].transform.position;
-                if(gameObject.name=="Player")
-                    Debug.Log("destination is "+routeDestinationIndex);
+                //if(gameObject.name!="Player")
+                    //Debug.Log("destination is "+routeDestinationIndex);
                 //Debug.Log(agent.destination);
             }            
         }
     }
-
-    public void inCollision()
+    private void inCollision() //called when car collides
     {
         wasInCollsision = true;
-        gameObject.GetComponent<NavMeshAgent>().enabled = false;  
+        gameObject.GetComponent<NavMeshAgent>().enabled = false;
+        rb.isKinematic = false;
+    }
+    private void inCollision(string objectName) //called when player collides
+    {
+        string loseText = "You were hit by a " + objectName;
+        GameObject.FindGameObjectWithTag("UIManager").GetComponent<GameStateManger>().LoadLoseScreen(loseText);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (!wasInCollsision)
         {
-            Debug.Log(gameObject.name + " was hit by " + other.gameObject.name);
-            inCollision();
+            if (gameObject.tag == "Player")
+            {
+                inCollision(other.gameObject.name);
+            }
+            else
+            {
+                inCollision();
+            }
         }
     }
     private int getClosestPointIndex()

@@ -844,7 +844,7 @@ MonoBehaviour:
   m_Size: {x: 10, y: 1, z: 2.2}
   m_Center: {x: 5, y: 1.5, z: -0.9}
   m_Area: 5
-  m_AffectedAgents: ffffffff
+  m_AffectedAgents: 00000000
 --- !u!1 &3140253781751238672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,7 +1588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6992490370071959735}
-  - component: {fileID: 2124394276951636227}
+  - component: {fileID: 4832145750797397444}
   m_Layer: 0
   m_Name: RoadNav
   m_TagString: Untagged
@@ -1612,7 +1612,7 @@ Transform:
   m_Father: {fileID: 4956838709132199465}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2124394276951636227
+--- !u!114 &4832145750797397444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
