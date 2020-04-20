@@ -20,15 +20,15 @@ public class TutorialStateManager : MonoBehaviour
     private GameObject Tutorial2;
     private GameObject Tutorial3;
     private GameObject Tutorial4;
-    float startingTime = 10f;
-    float currentTime = 0f;
+    float startingTime = 0f;
+    float currentTime = 3f;
     private int tutStepper;
 
 
 
     void Start()
     {
-        Time.timeScale = 0.2f;
+        Time.timeScale = 1f;
         Tutorial1 = GameObject.FindGameObjectWithTag("Tutorial1");
         Tutorial2 = GameObject.FindGameObjectWithTag("Tutorial2");
         Tutorial3 = GameObject.FindGameObjectWithTag("Tutorial3");
@@ -40,46 +40,51 @@ public class TutorialStateManager : MonoBehaviour
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
-        if (System.Math.Abs(currentTime) < Mathf.Epsilon)
+
+        if (currentTime<-startingTime)
         {
             tutStepper++;
+			currentTime = 3f;
         }
-    }
+		if (tutStepper == 1)
+		{
+			LoadTutorial2();
+		}
+		if (tutStepper == 2)
+		{
+			LoadTutorial3();
+		}
+		if (tutStepper == 3)
+		{
+			LoadTutorial4();
+		}
+		if (tutStepper == 3)
+		{
+			SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+		}
+	}
 
     void LoadTutorial1()
     {
         Tutorial1.SetActive(true);
-        if (tutStepper==1)
-        {
-            LoadTutorial2();
-        }
+		Tutorial2.SetActive(false);
+		Tutorial3.SetActive(false);
+		Tutorial4.SetActive(false);
 
-    }
+	}
     void LoadTutorial2()
     {
         Tutorial1.SetActive(false);
         Tutorial2.SetActive(true);
-        if (tutStepper == 2)
-        {
-            LoadTutorial3();
-        }
     }
     void LoadTutorial3()
     {
         Tutorial2.SetActive(false);
         Tutorial3.SetActive(true);
-        if (tutStepper == 3)
-        {
-            LoadTutorial4();
-        }
     }
     void LoadTutorial4()
     {
         Tutorial3.SetActive(false);
         Tutorial4.SetActive(true);
-        if (tutStepper == 3)
-        {
-            SceneManager.LoadScene("Level1", LoadSceneMode.Single);
-        }
     }
 }

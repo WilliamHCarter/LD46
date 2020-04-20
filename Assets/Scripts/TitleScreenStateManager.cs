@@ -10,6 +10,10 @@ public class TitleScreenStateManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level1",LoadSceneMode.Single);
     }
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene("Tutorial", LoadSceneMode.Single);
+    }
     public void ExitGame()
     {
         Debug.Log("Quit");
