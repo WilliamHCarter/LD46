@@ -18,6 +18,7 @@ TagManager:
   - UIManager
   - MeteorWarning
   - ControlsMenu
+  - RadialTimer
   layers:
   - Default
   - TransparentFX

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameStateManger : MonoBehaviour
 {
     private GameObject Reticle;
     private GameObject PowerBar;
+    private GameObject radialTimer;
 
     private GameObject WinScreen;
     private GameObject LoseScreen;
@@ -22,13 +24,20 @@ public class GameStateManger : MonoBehaviour
     private string state;
     private bool powerBarIsOn = false;
     private float power;
+    private int radialTimerValue = 0;
+    private bool timerEnabled = false;
+    private float timePassed = 0.0f;
+    private int timerMaxSeconds = 5;
+    private GameObject objThatStartedTimer;
 
-    // Start is called before the first frame update
+    //unity methods
     void Start()
     {
         Reticle = GameObject.FindGameObjectWithTag("Reticle");
         PowerBar = GameObject.FindGameObjectWithTag("PowerBar");
         PowerBar.GetComponent<PowerBar>().setMaxValue(powerBarMax * 10);
+        radialTimer = GameObject.FindGameObjectWithTag("RadialTimer");
+        radialTimer.SetActive(false);
 
         WinScreen = GameObject.FindGameObjectWithTag("WinScreen");
         PauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
@@ -39,6 +48,49 @@ public class GameStateManger : MonoBehaviour
 
         LoadGame();
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (state == "PauseMenu")
+            {
+                LoadGame();
+            }
+            else if (state == "Game")
+            {
+                LoadPauseMenu();
+            }
+            else
+            {
+                //can't load pause menu from anywhere other than game
+            }
+        }
+        if (timerEnabled)
+        {
+            timePassed += Time.deltaTime;
+            float fill = timePassed / timerMaxSeconds;
+            if (fill <= 1)
+            {
+                Image img = radialTimer.GetComponent<Image>();
+                img.fillAmount = fill;
+                Color color = Color.green;
+                if (fill > 0.4f)
+                    color = new Color(255,165,0);
+                if (fill > 0.8)
+                    color = Color.red;
+                img.color = color;
+            }
+            else
+            {
+                //time's up
+                Destroy(objThatStartedTimer.GetComponent<DragObject>());
+                objThatStartedTimer.GetComponent<Rigidbody>().useGravity = true;
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<isHoldingObject>().holdingObject(false);
+                stopHeldTimer();
+            }
+        }
+    }
+
     private void UnloadEverything()
     {
         Reticle.SetActive(false);
@@ -62,15 +114,22 @@ public class GameStateManger : MonoBehaviour
             ret = "Broken Meteor Shrapnel";
         return ret;
     }
-    public void increasePowerBar()
+    
+    //timer stuff
+    public void startHeldTimer(GameObject obj)
     {
-        if (powerBarIsOn && power < powerBarMax)
-        {
-            power += Time.deltaTime;
-            PowerBar.GetComponent<PowerBar>().SetValue((int)(power * 10));
-        }
+        timerEnabled = true;
+        radialTimer.SetActive(true);
+        objThatStartedTimer = obj;
+    }
+    public void stopHeldTimer()
+    {
+        timerEnabled = false;
+        radialTimer.SetActive(false);
+        timePassed = 0.0f;
     }
 
+    //loading different game states
     public void LoadWinScreen()
     {
         Time.timeScale = 1f;
@@ -118,8 +177,16 @@ public class GameStateManger : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScreen", LoadSceneMode.Single);
     }
-    
+
     //power bar stuff
+    public void increasePowerBar()
+    {
+        if (powerBarIsOn && power < powerBarMax)
+        {
+            power += Time.deltaTime;
+            PowerBar.GetComponent<PowerBar>().SetValue((int)(power * 10));
+        }
+    }
     public void setPowerBarActive(bool value)
     {
         powerBarIsOn = value;
@@ -138,23 +205,5 @@ public class GameStateManger : MonoBehaviour
     {
         return power;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (state == "PauseMenu")
-            {
-                LoadGame();
-            }
-            else if (state == "Game")
-            {
-                LoadPauseMenu();
-            }
-            else
-            {
-                //can't load pause menu from anywhere other than game
-            }
-        }
-    }
+   
 }

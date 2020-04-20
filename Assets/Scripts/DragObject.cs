@@ -50,6 +50,7 @@ public class DragObject : MonoBehaviour
                     wasPickedUp = true;
                     cam.gameObject.GetComponent<isHoldingObject>().holdingObject(true);
                     cameraOffset = Vector3.Distance(cam.transform.position, gameObject.transform.position);
+                    stateManager.GetComponent<GameStateManger>().startHeldTimer(gameObject);
                 }
                 if (!leftClick && !rightClick) //if not left click and not right click 
                 {
@@ -116,6 +117,8 @@ public class DragObject : MonoBehaviour
         if(wasPickedUp && !pickedUp)
         {
             //if you have already been picked up and you are not currently being held then you cannot be picked up anymore
+            rb.useGravity = true;
+            stateManager.GetComponent<GameStateManger>().stopHeldTimer();
             Destroy(this);
         }
 
