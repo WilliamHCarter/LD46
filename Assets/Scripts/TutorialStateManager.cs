@@ -60,7 +60,7 @@ public class TutorialStateManager : MonoBehaviour
 		}
 		if (tutStepper == 3)
 		{
-			SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+			SceneManager.LoadScene("TitleScreen", LoadSceneMode.Single);
 		}
 	}
 
