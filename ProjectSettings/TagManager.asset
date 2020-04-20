@@ -17,6 +17,7 @@ TagManager:
   - LoseScreen
   - UIManager
   - MeteorWarning
+  - ControlsMenu
   layers:
   - Default
   - TransparentFX

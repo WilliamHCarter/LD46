@@ -12,6 +12,7 @@ public class GameStateManger : MonoBehaviour
     private GameObject WinScreen;
     private GameObject LoseScreen;
     private GameObject PauseMenu;
+    private GameObject ControlsMenu;
 
     private GameObject player;
 
@@ -28,6 +29,7 @@ public class GameStateManger : MonoBehaviour
         WinScreen = GameObject.FindGameObjectWithTag("WinScreen");
         PauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
         LoseScreen = GameObject.FindGameObjectWithTag("LoseScreen");
+        ControlsMenu = GameObject.FindGameObjectWithTag("ControlsMenu");
 
         player = GameObject.FindGameObjectWithTag("Player");
 
@@ -41,6 +43,7 @@ public class GameStateManger : MonoBehaviour
         WinScreen.SetActive(false);
         PauseMenu.SetActive(false);
         LoseScreen.SetActive(false);
+        ControlsMenu.SetActive(false);
     }
     private string realObjName(GameObject obj)
     {
@@ -78,6 +81,14 @@ public class GameStateManger : MonoBehaviour
         state = "PauseMenu";
         UnloadEverything();
         PauseMenu.SetActive(true);
+
+    }
+    public void LoadControlsMenu()
+    {
+        Time.timeScale = 0f;
+        state = "ControlsMenu";
+        UnloadEverything();
+        ControlsMenu.SetActive(true);
 
     }
     public void LoadGame()
