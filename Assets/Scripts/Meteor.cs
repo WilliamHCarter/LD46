@@ -15,6 +15,7 @@ public class Meteor : MonoBehaviour
     {
         if (collision.gameObject.tag != "Meteor")
         {
+            Debug.Log(Time.time);
             Destroy(GetComponent<Rigidbody>());
             Destroy(GetComponent<MeshCollider>());
             Destroy(GetComponent<MeshRenderer>());

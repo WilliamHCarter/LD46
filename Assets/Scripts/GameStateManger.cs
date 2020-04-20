@@ -42,6 +42,19 @@ public class GameStateManger : MonoBehaviour
         PauseMenu.SetActive(false);
         LoseScreen.SetActive(false);
     }
+    private string realObjName(GameObject obj)
+    {
+        string ret = "Unknown Object";
+        if (obj.layer == 12)
+            ret = "Building";
+        if (obj.layer == 13)
+            ret = "Tree";
+        if (obj.layer == 10)
+            ret = "Car";
+        if (obj.layer == 14)
+            ret = "Broken Meteor Shrapnel";
+        return ret;
+    }
     public void LoadWinScreen()
     {
         state = "WinScreen";
@@ -49,12 +62,12 @@ public class GameStateManger : MonoBehaviour
         WinScreen.SetActive(true);
 
     }
-    public void LoadLoseScreen(string loseText)
+    public void LoadLoseScreen(GameObject obj)
     {
         state = "WinScreen";
         UnloadEverything();
         LoseScreen.SetActive(true);
-        textMeshProText.SetText(loseText);
+        textMeshProText.SetText("You were hit by a "+realObjName(obj));
 
     }
     public void LoadPauseMenu()

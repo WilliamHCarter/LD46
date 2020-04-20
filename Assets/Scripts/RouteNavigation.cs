@@ -76,8 +76,7 @@ public class RouteNavigation : MonoBehaviour
     private void inCollision(GameObject obj) //called when player collides
     {
         if (obj.layer!=11) { //player can't collide with the ground or the roads or things like that 
-            string loseText = "You were hit by a " + obj.name;
-            GameObject.FindGameObjectWithTag("UIManager").GetComponent<GameStateManger>().LoadLoseScreen(loseText);
+            GameObject.FindGameObjectWithTag("UIManager").GetComponent<GameStateManger>().LoadLoseScreen(obj);
 
             wasInCollsision = true;
             gameObject.GetComponent<NavMeshAgent>().enabled = false;
