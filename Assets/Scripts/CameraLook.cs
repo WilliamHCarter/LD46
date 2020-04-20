@@ -13,7 +13,6 @@ public class CameraLook : MonoBehaviour
     void Start()
     {
         xAxisClamp = 0.0f;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -39,11 +38,6 @@ public class CameraLook : MonoBehaviour
 
         transform.Rotate(Vector3.left * mouseY);
         cameraControllerBody.Rotate(Vector3.up * mouseX);
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
     }
     private void ClampXAxisRotationToValue(float value)
     {

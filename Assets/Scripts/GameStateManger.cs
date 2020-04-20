@@ -136,24 +136,27 @@ public class GameStateManger : MonoBehaviour
         UnloadEverything();
         LoseScreen.SetActive(true);
         textMeshProText.SetText("You were hit by a "+realObjName(obj));
+		Cursor.lockState = CursorLockMode.None;
 
-    }
+	}
     public void LoadPauseMenu()
     {
         Time.timeScale = 0f;
         state = "PauseMenu";
         UnloadEverything();
         PauseMenu.SetActive(true);
+		Cursor.lockState = CursorLockMode.None;
 
-    }
+	}
     public void LoadControlsMenu()
     {
         Time.timeScale = 0f;
         state = "ControlsMenu";
         UnloadEverything();
         ControlsMenu.SetActive(true);
+		Cursor.lockState = CursorLockMode.None;
 
-    }
+	}
     public void LoadGame()
     {
         Time.timeScale = 1f;
@@ -162,12 +165,14 @@ public class GameStateManger : MonoBehaviour
         Reticle.SetActive(true);
         PowerBar.SetActive(true);
         player.SetActive(true);
+		Cursor.lockState = CursorLockMode.Locked;
 
-    }
+	}
     public void LoadTitleScreen()
     {
         SceneManager.LoadScene("TitleScreen", LoadSceneMode.Single);
-    }
+		Cursor.lockState = CursorLockMode.None;
+	}
 
     //power bar stuff
     public void increasePowerBar()

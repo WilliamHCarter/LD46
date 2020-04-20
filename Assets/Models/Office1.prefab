@@ -3204,6 +3204,7 @@ GameObject:
   - component: {fileID: 1441228431048879954}
   - component: {fileID: 4981815678311354802}
   - component: {fileID: 6476698718081866222}
+  - component: {fileID: 8778891850032851826}
   - component: {fileID: -3428408596246255069}
   m_Layer: 0
   m_Name: Office1
@@ -3256,12 +3257,25 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 7, y: 15, z: 7}
+  m_Extents: {x: 6.5, y: 14.5, z: 6.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 16, z: -13}
+  m_Center: {x: 0, y: 15.5, z: -13}
   m_TimeToStationary: 0.5
+--- !u!65 &8778891850032851826
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441228431048879955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13, y: 29, z: 13}
+  m_Center: {x: 0, y: 15.5, z: -13}
 --- !u!114 &-3428408596246255069
 MonoBehaviour:
   m_ObjectHideFlags: 0
