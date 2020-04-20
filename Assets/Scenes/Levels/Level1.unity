@@ -3325,10 +3325,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &204700088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3413,10 +3412,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &227110728
 GameObject:
   m_ObjectHideFlags: 0
@@ -4145,10 +4143,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &335073134
 GameObject:
   m_ObjectHideFlags: 0
@@ -4591,10 +4588,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &376375429
 GameObject:
   m_ObjectHideFlags: 0
@@ -5145,10 +5141,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &497376222
 GameObject:
   m_ObjectHideFlags: 0
@@ -6059,6 +6054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshProText: {fileID: 69552342}
+  powerBarMax: 3
 --- !u!4 &564709096
 Transform:
   m_ObjectHideFlags: 0
@@ -6847,10 +6843,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &670004624 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
@@ -6873,10 +6868,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &671487102
 GameObject:
   m_ObjectHideFlags: 0
@@ -9969,10 +9963,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &874360097
 GameObject:
   m_ObjectHideFlags: 0
@@ -10717,10 +10710,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &938306264
 GameObject:
   m_ObjectHideFlags: 0
@@ -12718,10 +12710,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &1094734294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12988,10 +12979,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &1116355835
 GameObject:
   m_ObjectHideFlags: 0
@@ -13580,10 +13570,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &1206597346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1441228431048879955, guid: 07e470646bb454457a36121590404d13, type: 3}
@@ -13606,10 +13595,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &1228098850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14338,10 +14326,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &1275694408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15320,10 +15307,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &1299534096
 GameObject:
   m_ObjectHideFlags: 0
@@ -16204,10 +16190,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &1343371520
 GameObject:
   m_ObjectHideFlags: 0
@@ -16496,10 +16481,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &1366226883
 GameObject:
   m_ObjectHideFlags: 0
@@ -16783,10 +16767,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &1411590847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17009,10 +16992,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &1425232653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19107,10 +19089,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &1475704128
 GameObject:
   m_ObjectHideFlags: 0
@@ -19363,10 +19344,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &1481345692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20087,10 +20067,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &1617007595
 GameObject:
   m_ObjectHideFlags: 0
@@ -20667,10 +20646,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &1669152358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22055,10 +22033,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &1770481972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23349,10 +23326,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &1831866081
 GameObject:
   m_ObjectHideFlags: 0
@@ -24507,10 +24483,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &2034786566
 GameObject:
   m_ObjectHideFlags: 0
@@ -24563,10 +24538,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1001 &2049406756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25311,10 +25285,9 @@ MonoBehaviour:
   readyToFire: 0
   leftClick: 0
   rightClick: 0
-  powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
-  guide: {fileID: 1032200274}
+  minimumYPosition: 10
 --- !u!1 &2139205584
 GameObject:
   m_ObjectHideFlags: 0

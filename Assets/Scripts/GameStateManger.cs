@@ -17,14 +17,18 @@ public class GameStateManger : MonoBehaviour
     private GameObject player;
 
     public TextMeshProUGUI textMeshProText;
+    public int powerBarMax = 3;
 
     private string state;
+    private bool powerBarIsOn = false;
+    private float power;
 
     // Start is called before the first frame update
     void Start()
     {
         Reticle = GameObject.FindGameObjectWithTag("Reticle");
         PowerBar = GameObject.FindGameObjectWithTag("PowerBar");
+        PowerBar.GetComponent<PowerBar>().setMaxValue(powerBarMax * 10);
 
         WinScreen = GameObject.FindGameObjectWithTag("WinScreen");
         PauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
@@ -58,6 +62,15 @@ public class GameStateManger : MonoBehaviour
             ret = "Broken Meteor Shrapnel";
         return ret;
     }
+    public void increasePowerBar()
+    {
+        if (powerBarIsOn && power < powerBarMax)
+        {
+            power += Time.deltaTime;
+            PowerBar.GetComponent<PowerBar>().SetValue((int)(power * 10));
+        }
+    }
+
     public void LoadWinScreen()
     {
         Time.timeScale = 1f;
@@ -104,6 +117,26 @@ public class GameStateManger : MonoBehaviour
     public void LoadTitleScreen()
     {
         SceneManager.LoadScene("TitleScreen", LoadSceneMode.Single);
+    }
+    
+    //power bar stuff
+    public void setPowerBarActive(bool value)
+    {
+        powerBarIsOn = value;
+        PowerBar.SetActive(value);
+    }
+    public bool getPowerBarActive()
+    {
+        return powerBarIsOn;
+    }
+    public void ResetPowerBar()
+    {
+        power = 0;
+        PowerBar.GetComponent<PowerBar>().SetValue(0);
+    }
+    public float getPowerBarValue()
+    {
+        return power;
     }
     // Update is called once per frame
     void Update()
