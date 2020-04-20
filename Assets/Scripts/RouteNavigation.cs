@@ -12,20 +12,18 @@ public class RouteNavigation : MonoBehaviour
     public GameObject[] routePoints;
     public bool loop = false;
 
-    private bool wasInCollsision = false;
+
     private int routeDestinationIndex;
 
-    private Renderer renderer;
     private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        renderer = GetComponent<Renderer>();
         routeDestinationIndex = 0;
         rb = gameObject.GetComponent<Rigidbody>();
     }
-
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -93,8 +91,7 @@ public class RouteNavigation : MonoBehaviour
             }
             else
             {
-                if(!(gameObject.layer==10 && other.gameObject.layer==10)) //cars can't collide with other cars
-                    inCollision();
+               //cars can't collide with anything
             }
         }
     }
@@ -113,4 +110,5 @@ public class RouteNavigation : MonoBehaviour
         }
         return closestPointIndex;
     }
+    */
 }

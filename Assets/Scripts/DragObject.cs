@@ -67,6 +67,7 @@ public class DragObject : MonoBehaviour
                 if (pickedUp)
                 {
                     rb.useGravity = false;
+                    rb.isKinematic = false;
                     if (rightClick)
                     {
                         readyToFire = true;

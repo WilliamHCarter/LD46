@@ -184,7 +184,12 @@ public class GameStateManger : MonoBehaviour
         if (powerBarIsOn && power < powerBarMax)
         {
             power += Time.deltaTime;
-            PowerBar.GetComponent<PowerBar>().SetValue((int)(power * 10));
+            float powerNormalized = power / powerBarMax;
+            PowerBar.GetComponent<PowerBar>().SetValue((int)(powerNormalized*100));
+        }
+        else
+        {
+            //PowerBar.GetComponent<PowerBar>().SetValue(powerBarMax*30);
         }
     }
     public void setPowerBarActive(bool value)
