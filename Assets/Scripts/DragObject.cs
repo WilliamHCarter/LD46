@@ -7,13 +7,12 @@ using UnityEngine;
 public class DragObject : MonoBehaviour
 {
     //these public variables should be deleted later
-    public bool mouseOverObj = false;
-    public bool pickedUp = false;
-    public bool readyToFire = false;
-    public bool leftClick = false;
-    public bool rightClick = false;
+    private bool mouseOverObj = false;
+    private bool pickedUp = false;
+    private bool readyToFire = false;
+    private bool leftClick = false;
+    private bool rightClick = false;
 
-    public Transform cam;
     public int throwPowerMultiplier = 400; //maybe this can be dependant on the object being thrown
     public int minimumYPosition = 10;
 
@@ -21,15 +20,32 @@ public class DragObject : MonoBehaviour
 
     private float cameraOffset;
     private bool escape = false;
-    private bool objectBeingHeld;
+    private bool objectBeingHeld; //is an object being held
     private Component stateManager;
     private bool wasPickedUp = false;
+    private Transform cam;
+    private Vector3 offset;
+    private bool beingLookedAt = false;
+
+    public float countDownCount = 0.0f;
+    private int countDownTime = 3;
 
     private void Start()
     {
+        cam = GameObject.FindGameObjectWithTag("MainCamera").transform;
         rb = gameObject.GetComponent<Rigidbody>();
         stateManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<GameStateManger>();
+        if(gameObject.GetComponent<pickUpOffset>() != null)
+        {
+            offset = gameObject.GetComponent<pickUpOffset>().getOffset();
+        }
+        else
+        {
+            offset = Vector3.zero;
+        }
     }
+
+    public bool ableToBePickedUp = true;
 
     private void Update()
     {
@@ -38,32 +54,30 @@ public class DragObject : MonoBehaviour
 
         objectBeingHeld = cam.gameObject.GetComponent<isHoldingObject>().holdingObject();
 
-        if (!escape && (pickedUp || !objectBeingHeld))
+        if (!ableToBePickedUp)
+        {
+            countDownCount -= Time.deltaTime;
+            if (countDownCount <= 0.0f)
+            {
+                ableToBePickedUp = true;
+                countDownCount = 0.0f;
+            }    
+        }
+
+        if (!escape && (pickedUp || !objectBeingHeld) && ableToBePickedUp)
         {
             if (!rightClick)
                 stateManager.GetComponent<GameStateManger>().setPowerBarActive(false);
-            if (mouseOverObj || pickedUp || readyToFire)
+            if(mouseOverObj && Input.GetMouseButtonDown(0) && !pickedUp)
             {
-                if (leftClick && !pickedUp) //if left click and pickedUp is false 
-                {
-                    pickedUp = true;
-                    wasPickedUp = true;
-                    cam.gameObject.GetComponent<isHoldingObject>().holdingObject(true);
-                    cameraOffset = Vector3.Distance(cam.transform.position, gameObject.transform.position);
-                    stateManager.GetComponent<GameStateManger>().startHeldTimer(gameObject);
-                }
-                if (!leftClick && !rightClick) //if not left click and not right click 
-                {
-                    if (readyToFire) //if both buttons are released when in firing position then fire
-                    {
-                        //fire object
-                    }
-                    else
-                    {
-                        readyToFire = false;
-                        pickedUp = false;
-                    }
-                }
+                pickedUp = true;
+                wasPickedUp = true;
+                cam.gameObject.GetComponent<isHoldingObject>().holdingObject(true);
+                cameraOffset = Vector3.Distance(cam.transform.position, gameObject.transform.position);
+                stateManager.GetComponent<GameStateManger>().startHeldTimer(gameObject);
+            } //if you are able to be picked up and clicked on then get picked up
+            if (pickedUp || readyToFire)
+            {
                 if (pickedUp)
                 {
                     rb.useGravity = false;
@@ -75,23 +89,29 @@ public class DragObject : MonoBehaviour
                     }
                     Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, cameraOffset); //6.33 is offset from camera 
                     Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+                    objPosition = applyOffset(objPosition);
                     transform.position = clampY(objPosition,minimumYPosition);
 
-                    if (!rightClick && !leftClick)
-                        pickedUp = false;
                     
                 }
                 if (!rightClick)
                 {
-                    if (readyToFire)//if the left click is released when object is in firing position then fire object
+                    if (readyToFire)//if the right click is released when object is in firing position then fire object
                     {
                         //fire object
                         rb.AddForce(cam.forward * stateManager.GetComponent<GameStateManger>().getPowerBarValue() * throwPowerMultiplier);
                         Debug.Log("Fire!");
                         pickedUp = false;
+                        dropped();
                     }
                     readyToFire = false;
                     stateManager.GetComponent<GameStateManger>().ResetPowerBar();
+                }
+                if (!leftClick && !rightClick) //if not left click and not right click 
+                {
+                    dropped();
+                    readyToFire = false;
+                    pickedUp = false;
                 }
 
                 if (!pickedUp && !readyToFire)
@@ -115,14 +135,27 @@ public class DragObject : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
             }
         }
-        if(wasPickedUp && !pickedUp)
+        if (mouseOverObj && !cam.GetComponent<isHoldingObject>().holdingObject()) //if the mouse is over this object and an object is not being held 
         {
-            //if you have already been picked up and you are not currently being held then you cannot be picked up anymore
-            rb.useGravity = true;
-            stateManager.GetComponent<GameStateManger>().stopHeldTimer();
-            Destroy(this);
+            stateManager.GetComponent<GameStateManger>().mouseOverObject(countDownCount/countDownTime,gameObject);
+        }
+        if (!mouseOverObj && beingLookedAt)
+        {
+            stateManager.GetComponent<GameStateManger>().mouseOverObject(0,gameObject);
         }
 
+    }
+    public void dropped()
+    {
+        Debug.Log("dropped");
+        pickedUp = false;
+        ableToBePickedUp = false;
+        countDownCount = countDownTime;
+        objectBeingHeld = false;
+        rb.useGravity = true;
+        cam.GetComponent<isHoldingObject>().holdingObject(false);
+        stateManager.GetComponent<GameStateManger>().stopHeldTimer();
+        stateManager.GetComponent<GameStateManger>().ResetPowerBar();
     }
     private void OnMouseEnter()
     {
@@ -131,10 +164,6 @@ public class DragObject : MonoBehaviour
     private void OnMouseExit()
     {
         mouseOverObj = false;
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        //canBePickedUp = true; //objects cannot be used more than once
     }
     private Vector3 clampY(Vector3 pos, int minY)
     {
@@ -145,5 +174,14 @@ public class DragObject : MonoBehaviour
         }
         return new Vector3(pos.x,newY,pos.z);
 
+    }
+    private Vector3 applyOffset(Vector3 pos)
+    {
+        Vector3 ret = new Vector3(pos.x + offset.x, pos.y + offset.y, pos.z + offset.z);
+        return ret;
+    }
+    public void SetBeingLookedAt(bool b)
+    {
+        beingLookedAt = b;
     }
 }
