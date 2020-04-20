@@ -1663,7 +1663,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 564709095}
         m_TargetAssemblyTypeName: GameStateManger, Assembly-CSharp
         m_MethodName: LoadTitleScreen
         m_Mode: 1
@@ -2890,7 +2890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80154096edb8d39478863ab9172def54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 5
+  defaultSpeed: 10
   cam: {fileID: 1060419791}
 --- !u!4 &145725544
 Transform:
@@ -3328,68 +3328,6 @@ MonoBehaviour:
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
---- !u!1001 &204700088
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1022706765}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.15
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-      propertyPath: m_Name
-      value: dumbGuyLD46
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
---- !u!4 &204700089 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 19e28e7ef1ed540278d035ac8ce962c4, type: 3}
-  m_PrefabInstance: {fileID: 204700088}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207698636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
@@ -10047,7 +9985,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 564709095}
         m_TargetAssemblyTypeName: GameStateManger, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
@@ -10505,7 +10443,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 564709095}
         m_TargetAssemblyTypeName: GameStateManger, Assembly-CSharp
         m_MethodName: LoadTitleScreen
         m_Mode: 1
@@ -10676,7 +10614,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 564709095}
         m_TargetAssemblyTypeName: GameStateManger, Assembly-CSharp
         m_MethodName: LoadPauseMenu
         m_Mode: 1
@@ -11958,7 +11896,7 @@ Transform:
   m_LocalPosition: {x: 99.94, y: 2, z: 0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 204700089}
+  - {fileID: 1338597972}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16193,6 +16131,68 @@ MonoBehaviour:
   cam: {fileID: 1060419792}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+--- !u!1001 &1338597971
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1022706765}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+      propertyPath: m_Name
+      value: dumbGuy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+--- !u!4 &1338597972 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+  m_PrefabInstance: {fileID: 1338597971}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1343371520
 GameObject:
   m_ObjectHideFlags: 0
@@ -22000,9 +22000,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 564709095}
         m_TargetAssemblyTypeName: GameStateManger, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: LoadPauseMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23969,6 +23969,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1922629816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7561923399564061543, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+  m_PrefabInstance: {fileID: 1338597971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1922629819
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922629816}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+  m_Controller: {fileID: 9100000, guid: f4db295105d364f6b95c40288416a9fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1942744764
 GameObject:
   m_ObjectHideFlags: 0
@@ -25101,9 +25125,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 564709095}
         m_TargetAssemblyTypeName: GameStateManger, Assembly-CSharp
-        m_MethodName: LoadTitleScreen
+        m_MethodName: LoadControlsMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
