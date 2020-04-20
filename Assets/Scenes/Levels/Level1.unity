@@ -16206,7 +16206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.25
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16248,13 +16248,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: dumbGuy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6057140222963153312, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
 --- !u!4 &1338597972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
   m_PrefabInstance: {fileID: 1338597971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1338597973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 636d3b92c33834b59b0c2e9e2a658b37, type: 3}
+  m_PrefabInstance: {fileID: 1338597971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &1338597974
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338597973}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4b3b46ebac78b464e8a38eaa85c7b083, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4b3b46ebac78b464e8a38eaa85c7b083, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1343371520
 GameObject:
   m_ObjectHideFlags: 0
