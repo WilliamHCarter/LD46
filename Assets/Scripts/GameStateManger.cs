@@ -57,6 +57,7 @@ public class GameStateManger : MonoBehaviour
     }
     public void LoadWinScreen()
     {
+        Time.timeScale = 1f;
         state = "WinScreen";
         UnloadEverything();
         WinScreen.SetActive(true);
@@ -64,6 +65,7 @@ public class GameStateManger : MonoBehaviour
     }
     public void LoadLoseScreen(GameObject obj)
     {
+        Time.timeScale = 1f;
         state = "WinScreen";
         UnloadEverything();
         LoseScreen.SetActive(true);
@@ -72,6 +74,7 @@ public class GameStateManger : MonoBehaviour
     }
     public void LoadPauseMenu()
     {
+        Time.timeScale = 0f;
         state = "PauseMenu";
         UnloadEverything();
         PauseMenu.SetActive(true);
@@ -79,6 +82,7 @@ public class GameStateManger : MonoBehaviour
     }
     public void LoadGame()
     {
+        Time.timeScale = 1f;
         state = "Game";
         UnloadEverything();
         Reticle.SetActive(true);
