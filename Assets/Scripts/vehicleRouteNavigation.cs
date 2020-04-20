@@ -20,7 +20,6 @@ public class vehicleRouteNavigation : MonoBehaviour
     void Start()
     {
         routeDestinationIndex = getStartPointIndex();
-        Debug.Log("Route Destination Index: "+routeDestinationIndex);
         rb = gameObject.GetComponent<Rigidbody>();
         path = new NavMeshPath();
         agent.destination = transform.position;
@@ -85,11 +84,10 @@ public class vehicleRouteNavigation : MonoBehaviour
                 }
             }
         }
-        Debug.Log("Closest Point: "+closestPointIndex);
-        Debug.Log("Next Closest Point: " + nextClosestPointIndex);
+        
         if (nextClosestPointIndex > closestPointIndex)
             return nextClosestPointIndex;
-        if(nextClosestPointIndex==1)
+        if(nextClosestPointIndex==1 && closestPointIndex < 1)
             return nextClosestPointIndex;
         return closestPointIndex;
 
