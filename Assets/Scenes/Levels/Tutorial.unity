@@ -393,14 +393,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &62827902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,14 +997,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1001 &86235632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2180,14 +2172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1001 &181456287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2535,14 +2523,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1001 &217284383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2954,14 +2938,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &235270867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,14 +3856,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &372174284
 GameObject:
   m_ObjectHideFlags: 0
@@ -4811,14 +4787,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1001 &487246600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5533,14 +5505,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &572613818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,14 +5642,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1001 &591259618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6025,14 +5989,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1001 &594386484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6380,14 +6340,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &597452895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6667,14 +6623,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &614670962
 GameObject:
   m_ObjectHideFlags: 0
@@ -7100,14 +7052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &620132881
 GameObject:
   m_ObjectHideFlags: 0
@@ -7277,14 +7225,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &668037901
 GameObject:
   m_ObjectHideFlags: 0
@@ -7628,14 +7572,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &671487102
 GameObject:
   m_ObjectHideFlags: 0
@@ -9108,14 +9048,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &769159504
 GameObject:
   m_ObjectHideFlags: 0
@@ -9805,14 +9741,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &787626270
 GameObject:
   m_ObjectHideFlags: 0
@@ -10971,7 +10903,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 842660770}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -11548,14 +11480,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &971683540
 GameObject:
   m_ObjectHideFlags: 0
@@ -16210,7 +16138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80154096edb8d39478863ab9172def54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 10
+  defaultSpeed: 50
   cam: {fileID: 218816031}
 --- !u!4 &1273029308
 Transform:
@@ -16220,7 +16148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273029306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.8, y: 24.9, z: -31.9}
+  m_LocalPosition: {x: 100, y: 3.57, z: -3.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 218816035}
@@ -19954,14 +19882,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &1459016840
 GameObject:
   m_ObjectHideFlags: 0
@@ -20401,14 +20325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1001 &1476887055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20776,14 +20696,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &1514843264
 GameObject:
   m_ObjectHideFlags: 0
@@ -20916,14 +20832,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &1523671539
 GameObject:
   m_ObjectHideFlags: 0
@@ -22287,14 +22199,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &1642249115
 GameObject:
   m_ObjectHideFlags: 0
@@ -22881,14 +22789,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &1811304065
 GameObject:
   m_ObjectHideFlags: 0
@@ -24902,14 +24806,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &1899781654
 GameObject:
   m_ObjectHideFlags: 0
@@ -25255,14 +25155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1 &1910125208
 GameObject:
   m_ObjectHideFlags: 0
@@ -26373,14 +26269,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 600
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1
 --- !u!1001 &2036708539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27262,11 +27154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverObj: 0
-  pickedUp: 0
-  readyToFire: 0
-  leftClick: 0
-  rightClick: 0
-  cam: {fileID: 218816035}
   throwPowerMultiplier: 1200
   minimumYPosition: 10
+  countDownCount: 0
+  ableToBePickedUp: 1

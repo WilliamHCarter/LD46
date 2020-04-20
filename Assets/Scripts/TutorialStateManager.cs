@@ -21,14 +21,14 @@ public class TutorialStateManager : MonoBehaviour
     private GameObject Tutorial3;
     private GameObject Tutorial4;
     float startingTime = 0f;
-    float currentTime = 3f;
+    float currentTime = 1f;
     private int tutStepper;
 
 
 
     void Start()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 0.2f;
         Tutorial1 = GameObject.FindGameObjectWithTag("Tutorial1");
         Tutorial2 = GameObject.FindGameObjectWithTag("Tutorial2");
         Tutorial3 = GameObject.FindGameObjectWithTag("Tutorial3");
