@@ -2894,7 +2894,33 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
+  guide: {fileID: 1032200274}
+--- !u!1 &207698636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 366578727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &207698637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207698636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
   guide: {fileID: 1032200274}
 --- !u!1 &227110728
 GameObject:
@@ -3478,7 +3504,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1 &335073134
 GameObject:
@@ -3886,7 +3912,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1 &387751055
 GameObject:
@@ -3916,6 +3942,36 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1915198458}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &438788484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438788485}
+  m_Layer: 0
+  m_Name: Target4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &438788485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438788484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2, y: 0, z: 121.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1366226885}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &453829044
@@ -4182,7 +4238,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1 &497376222
 GameObject:
@@ -5791,6 +5847,58 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.000005722}
   m_SizeDelta: {x: 1176.1512, y: 757.28986}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &663388272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 1669152358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &663388273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663388272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
+--- !u!1 &670004624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 896029849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &670004625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670004624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1 &671487102
 GameObject:
   m_ObjectHideFlags: 0
@@ -8710,6 +8818,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6470815369198412744, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
   m_PrefabInstance: {fileID: 841069346}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &861573249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1441228431048879955, guid: 07e470646bb454457a36121590404d13, type: 3}
+  m_PrefabInstance: {fileID: 239305904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &861573250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861573249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1 &879731482
 GameObject:
   m_ObjectHideFlags: 0
@@ -9177,7 +9311,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1001 &939799129
 PrefabInstance:
@@ -10999,6 +11133,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380ff26e4f8a5af4ca39e7c8052a790e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1063178855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 841069346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1063178856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063178855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1001 &1094734294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11243,6 +11403,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 130, y: 1, z: 130}
   m_Center: {x: 45, y: 0, z: 65}
+--- !u!1 &1104314546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 321870007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1104314547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104314546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1 &1137928349
 GameObject:
   m_ObjectHideFlags: 0
@@ -11809,6 +11995,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1441228431048879954, guid: 07e470646bb454457a36121590404d13, type: 3}
   m_PrefabInstance: {fileID: 1156456572}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1185113352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 537367987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1185113353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185113352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1 &1206597346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1441228431048879955, guid: 07e470646bb454457a36121590404d13, type: 3}
@@ -11833,7 +12045,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1001 &1228098850
 PrefabInstance:
@@ -12541,6 +12753,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7038166749343471468, guid: 1762ec40b52254036ad7b6c9e844d1be, type: 3}
   m_PrefabInstance: {fileID: 1228098850}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1249613828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 2072052488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1249613829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249613828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1001 &1275694408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13369,7 +13607,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1001 &1305661040
 PrefabInstance:
@@ -14077,6 +14315,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7038166749343471468, guid: 1762ec40b52254036ad7b6c9e844d1be, type: 3}
   m_PrefabInstance: {fileID: 1305661040}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1335842642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 1678449312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1335842643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335842642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1 &1343371520
 GameObject:
   m_ObjectHideFlags: 0
@@ -14367,7 +14631,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1 &1366226883
 GameObject:
@@ -14401,6 +14665,10 @@ MonoBehaviour:
   meteorPrefab: {fileID: 4019200069746455561, guid: d59486f3d1cf6dc43b17213ea1a29fc3, type: 3}
   targetPositions:
   - {fileID: 1990905390}
+  - {fileID: 1529791521}
+  - {fileID: 2034786567}
+  - {fileID: 438788485}
+  - {fileID: 1516259534}
   headsUpTime: 3
 --- !u!4 &1366226885
 Transform:
@@ -14414,6 +14682,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1990905390}
+  - {fileID: 1529791521}
+  - {fileID: 2034786567}
+  - {fileID: 438788485}
+  - {fileID: 1516259534}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14701,7 +14973,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1001 &1411590847
 PrefabInstance:
@@ -14903,6 +15175,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 1, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1424409187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 966332128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1424409188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424409187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1001 &1425232653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16827,6 +17125,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459721340}
   m_CullTransparentMesh: 0
+--- !u!1 &1468869557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 453829044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1468869558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468869557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1001 &1479016901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16929,7 +17253,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1001 &1481345692
 PrefabInstance:
@@ -17197,6 +17521,36 @@ Transform:
   m_Father: {fileID: 1915198458}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1516259533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1516259534}
+  m_Layer: 0
+  m_Name: Target5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1516259534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516259533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90.7, y: 0, z: 121.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1366226885}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1523190245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17397,6 +17751,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 1, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1529791520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1529791521}
+  m_Layer: 0
+  m_Name: Target2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1529791521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529791520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 80.7, y: 0, z: 60.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1366226885}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1555453849
 GameObject:
   m_ObjectHideFlags: 0
@@ -17555,7 +17939,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1 &1617007595
 GameObject:
@@ -18135,7 +18519,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1001 &1669152358
 PrefabInstance:
@@ -19317,7 +19701,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1001 &1770481972
 PrefabInstance:
@@ -20433,6 +20817,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 1, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1799390430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 1963545172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1799390431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799390430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1 &1831866081
 GameObject:
   m_ObjectHideFlags: 0
@@ -21150,6 +21560,88 @@ Transform:
   m_Father: {fileID: 1366226885}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2033059292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 619183586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2033059293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033059292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
+--- !u!1 &2034786566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2034786567}
+  m_Layer: 0
+  m_Name: Target3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2034786567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034786566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.2, y: 0, z: 68.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1366226885}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036865100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041086508974952923, guid: 1ec101f2b630549e8b32bbb39c3d8372, type: 3}
+  m_PrefabInstance: {fileID: 1479016901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2036865101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036865100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766e22df21f32364cbbf4a886a079402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverObj: 0
+  pickedUp: 0
+  readyToFire: 0
+  leftClick: 0
+  rightClick: 0
+  powerBarObj: {fileID: 2719126}
+  cam: {fileID: 1060419792}
+  throwPowerMultiplier: 600
+  guide: {fileID: 1032200274}
 --- !u!1001 &2049406756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21728,7 +22220,7 @@ MonoBehaviour:
   rightClick: 0
   powerBarObj: {fileID: 2719126}
   cam: {fileID: 1060419792}
-  throwPowerMultiplier: 400
+  throwPowerMultiplier: 1200
   guide: {fileID: 1032200274}
 --- !u!1 &2139205584
 GameObject:
