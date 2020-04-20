@@ -71,22 +71,13 @@ public class GameStateManger : MonoBehaviour
             float fill = timePassed / timerMaxSeconds;
             if (fill <= 1)
             {
-                Image img = radialTimer.GetComponent<Image>();
-                img.fillAmount = fill;
-                Color color = Color.green;
-                if (fill > 0.4f)
-                    color = new Color(255,165,0);
-                if (fill > 0.8)
-                    color = Color.red;
-                img.color = color;
+                fillTimer(fill);
             }
             else
             {
                 //time's up
-                Destroy(objThatStartedTimer.GetComponent<DragObject>());
-                objThatStartedTimer.GetComponent<Rigidbody>().useGravity = true;
-                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<isHoldingObject>().holdingObject(false);
                 stopHeldTimer();
+                objThatStartedTimer.GetComponent<DragObject>().dropped();
             }
         }
     }
@@ -211,4 +202,29 @@ public class GameStateManger : MonoBehaviour
         return power;
     }
    
+    private void fillTimer(float fill)
+    {
+        radialTimer.SetActive(true);
+        Image img = radialTimer.GetComponent<Image>();
+        img.fillAmount = fill;
+        Color color = Color.green;
+        if (fill > 0.4f)
+            color = new Color(255, 165, 0);
+        if (fill > 0.8)
+            color = Color.red;
+        img.color = color;
+    }
+    public void mouseOverObject(float f, GameObject obj) //gets called when an object is being moused over with the cooldown timer of that object and the object that is being moused over
+    {
+        if (f == 0 || timerEnabled) //if there is no cooldown or the timer is already in use then don't show a cooldown timer
+        {
+            if (radialTimer.activeSelf) //check to make sure that the timer is not active
+                radialTimer.SetActive(false);
+        }
+        else
+        {
+            fillTimer(f);
+            obj.GetComponent<DragObject>().SetBeingLookedAt(true);
+        }
+    }
 }
